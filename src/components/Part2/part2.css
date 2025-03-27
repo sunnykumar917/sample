@@ -1,0 +1,26 @@
+.story-container {
+  font-size: 2rem; /* Slightly smaller for better readability */
+  line-height: 1.5;
+  padding: 20px;
+  max-width: 700px; /* A wider container for long text */
+  margin: 0 auto;
+  cursor: default;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.word {
+  transition: opacity 0.3s ease, font-weight 0.3s ease;
+  display: inline-block;
+  margin: 0 2px; /* Add some spacing between words */
+}
+
+.half {
+  opacity: 0.1; /* Half visibility */
+  font-weight: normal;
+}
+
+.full {
+  opacity: 1; /* Full visibility */
+  
+}

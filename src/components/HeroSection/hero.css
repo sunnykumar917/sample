@@ -1,0 +1,89 @@
+/* Ensures the hero section takes up the full viewport */
+.hero-section-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevents overflow if video doesn't fit properly */
+  }
+  
+  /* Styling for the background video */
+  .hero-video {
+    position: absolute;  /* Position the video behind the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video fills the container */
+    z-index: -1;  /* Ensure the video stays behind the content */
+  }
+  
+  /* Content that sits on top of the video */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    position: relative; /* Ensures content is above the video */
+    z-index: 1; /* Keeps the text above the video */
+  }
+  
+  /* Styling for the heading */
+  .hero-heading {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;  /* Ensure text is visible on the video background */
+  }
+  
+  /* Styling for the subheading */
+  .hero-subheading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: white;  /* Ensure text is visible on the video background */
+  }
+  
+  /* Button styling */
+  /* Button styling */
+
+  
+  /* Button hover effect */
+  .button:hover {
+    background-color: white;  /* Change the background to white when hovered */
+    color: #007bff;  /* Change text color to blue */
+    border-color: #007bff;  /* Change border color to blue */
+  }
+  
+  /* Button focus effect */
+  .button:focus {
+    outline: none;  /* Remove outline on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);  /* Add a blue outline on focus */
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero-heading {
+      font-size: 3rem;
+      margin-top: 40px;
+    }
+  
+    .hero-subheading {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-heading {
+      font-size: 52px;
+      margin-top: 180px;
+      
+    }
+  
+    .hero-subheading {
+      font-size: 1rem;
+    }
+  }
+  

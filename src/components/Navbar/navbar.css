@@ -1,0 +1,52 @@
+#navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;  /* Ensuring the background color is set to black */
+  color: white;  /* White text and icons to make it visible */
+  z-index: 9999;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hidden {
+  transform: translateY(-100%);  /* Hides navbar off the top */
+}
+
+.navbar-show {
+  transform: translateY(0);  /* Shows navbar */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo svg {
+  fill: white;  /* Ensures logo color is white */
+}
+
+.menu svg {
+  fill: white;  /* Ensures menu icon color is white */
+}
+
+.nav-toggle-container {
+  display: none;  /* Initially hide mobile toggle, for mobile view it will appear */
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-toggle-container {
+    display: block;
+  }
+}
+
+.nav-toggle .bar {
+  display: block;
+  height: 4px;
+  width: 25px;
+  margin: 5px 0;
+  background-color: white; /* White toggle bar */
+}
