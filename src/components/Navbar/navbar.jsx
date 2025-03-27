@@ -41,6 +41,10 @@ const Navbar = () => {
             <circle cx="16" cy="16" r="16" fill="white" />
           </svg>
         </div>
+        <div className="nav-links">
+          <a href="/" className="nav-link">Home</a>
+          <a href="/form" className="nav-link">Form</a> {/* Fix the link to match your route */}
+        </div>
       </div>
       <div id="toggle-container-mob" className="nav-toggle-container">
         <a className="nav-toggle">

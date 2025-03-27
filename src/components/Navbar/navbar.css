@@ -50,3 +50,21 @@
   margin: 5px 0;
   background-color: white; /* White toggle bar */
 }
+
+/* Styling for nav-links (Home and From menu items) */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f1f1f1; /* Change the hover color */
+}
+
